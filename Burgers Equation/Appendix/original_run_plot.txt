@@ -1,0 +1,14 @@
+data = np.loadtxt("original_run.txt", comments="#", delimiter=" ", unpack=False)
+
+fig, ax = plt.subplots()
+plt.semilogy(np.arange(1,5001),data[:,0], label = 'Loss')
+plt.semilogy(np.arange(1,5001),data[:,1], label = 'Error')
+
+plt.legend()
+ax.set_xlabel('iterations')
+ax.set_ylabel('Loss/Error')
+fig.suptitle('Convergence Plot')
+plt.grid()
+plt.show()
+
+# fig.savefig('original_run_history.png', dpi = 500)
