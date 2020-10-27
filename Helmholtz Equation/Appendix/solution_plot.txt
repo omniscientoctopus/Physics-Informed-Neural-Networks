@@ -1,0 +1,34 @@
+#SOLUTION PLOT
+
+# #Plot and save image
+# plt.pcolor(x_1,x_2,u_pred, cmap = 'jet')
+# plt.axis('scaled')
+# plt.colorbar()
+# plt.savefig('Example_2.eps', format='eps')
+# plt.savefig('Example_2.png', dpi = 500)
+# plt.close()
+
+# #Error and save image
+# plt.pcolor(x_1,x_2,u_pred-usol, cmap = 'jet')
+# plt.axis('scaled')
+# plt.colorbar()
+# plt.savefig('Example_2_error.eps', format='eps')
+# plt.savefig('Example_2_error.png', dpi = 500)
+# plt.close()
+
+
+#CONVERGENCE PLOT
+
+data = np.loadtxt("Appendix/example_2.txt", comments = "#", delimiter = " ", unpack = False)
+
+fig,ax = plt.subplots()
+plt.semilogy(np.arange(1,5001),data[:,0], color = 'blue', label = '$\hat J_{PINN} = \hat J_{BC} + \hat J_{PDE}$')
+plt.semilogy(np.arange(1,5001),data[:,1], color = 'green', label = ' $\hat J_{BC}$')
+plt.semilogy(np.arange(1,5001),data[:,2], color = 'orange', label = '$\hat J_{PDE}$')
+plt.semilogy(np.arange(1,5001),data[:,3], color = 'red', label = '$\epsilon_{PINN}$')
+
+plt.legend()
+plt.grid()
+plt.show()
+
+# fig.savefig('Example_2.eps', format='eps')
