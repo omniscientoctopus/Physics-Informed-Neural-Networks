@@ -21,11 +21,11 @@ Z = np.array([[0.41763,0.12397,0.49341,0.04206],
 
 fig = plt.figure()
 
-plt.semilogy(N_f,Z[0,:],label = 'N_u = 20')
-plt.semilogy(N_f,Z[1,:],label = 'N_u = 40')
-plt.semilogy(N_f,Z[2,:],label = 'N_u = 80')
-plt.semilogy(N_f,Z[3,:],label = 'N_u = 100')
-plt.semilogy(N_f,Z[4,:],label = 'N_u = 200')
+plt.semilogy(N_f,Z[0,:], '*-', label = 'N_u = 20')
+plt.semilogy(N_f,Z[1,:],'*-',label = 'N_u = 40')
+plt.semilogy(N_f,Z[2,:],'*-',label = 'N_u = 80')
+plt.semilogy(N_f,Z[3,:],'*-',label = 'N_u = 100')
+plt.semilogy(N_f,Z[4,:],'*-',label = 'N_u = 200')
 
 plt.xlabel('N_f')
 plt.ylabel('Error')
@@ -33,4 +33,5 @@ plt.grid()
 plt.legend(bbox_to_anchor=(1, 1), loc='upper left', ncol=1)
 plt.show()
 
+# fig.savefig('Trend.svg', format = 'svg')
 # fig.savefig('Trend.png',dpi=500,bbox_inches="tight")

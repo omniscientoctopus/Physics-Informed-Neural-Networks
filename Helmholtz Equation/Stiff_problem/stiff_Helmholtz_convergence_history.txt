@@ -1,0 +1,18 @@
+data = np.loadtxt("Stiff_problem/convergence_history.txt", comments = "#", delimiter = " ", unpack = False)
+
+fig,ax = plt.subplots()
+plt.semilogy(np.arange(1,5001),data[:,0], color = 'blue', label = '$\hat J_{PINN} = \hat J_{BC} + \hat J_{PDE}$')
+plt.semilogy(np.arange(1,5001),data[:,1], color = 'green', label = ' $\hat J_{BC}$')
+plt.semilogy(np.arange(1,5001),data[:,2], color = 'orange', label = '$\hat J_{PDE}$')
+plt.semilogy(np.arange(1,5001),data[:,3], color = 'red', label = '$\epsilon_{PINN}$')
+
+ax.set_yticks([1e4, 1e3, 1e2, 1e1, 1e0, 1e-1, 1e-2, 1e-3])
+
+plt.legend()
+ax.set_xlabel('iterations')
+ax.set_ylabel('Loss/Error')
+plt.grid()
+plt.show()
+
+# fig.savefig('Stiff_Helmholtz_convergence_history.eps', format = 'eps')
+# fig.savefig('Stiff_Helmholtz_convergence_history.png', dpi = 500)
