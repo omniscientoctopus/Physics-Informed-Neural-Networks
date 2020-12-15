@@ -8,7 +8,7 @@ This repository contains implementation of PINNs in TensorFlow 2 (w and w/o Kera
 
 1. Solving stiff PDEs with the L-BFGS optimizer
 
-PINNs are studied with the L-BFGS optimizer and compared with the Adam optimizer to observe the gradient imbalance reported in for stiff PDEs [2]. It was observed that the gradient imbalance is not as stark with the L-BFGS optimizer when solving stiff PDEs. However, the convergence of PINNs is still slow due to the ill-conditioning of the optimization landscape. 
+PINNs are studied with the L-BFGS optimizer and compared with the Adam optimizer to observe the gradient imbalance reported in [2]  for stiff PDEs. It was observed that the gradient imbalance is not as stark with the L-BFGS optimizer when solving stiff PDEs. However, the convergence of PINNs is still slow due to the ill-conditioning of the optimization landscape. 
 
 2. Bottom Up learning in PINNs
 
