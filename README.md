@@ -20,7 +20,7 @@ The effect of transfer learning in PINNs was studied to understand its effects o
 
 [1] Maziar Raissi, Paris Perdikaris, and George Em Karniadakis.Physics InformedDeep Learning (Part I): Data-driven Solutions of Nonlinear Partial     DifferentialEquations.url:http://arxiv.org/pdf/1711.10561v1
 
-[2] Sifan Wang, Yujun Teng, Paris Perdikaris.UNDERSTANDING AND MITIGAT-ING GRADIENT PATHOLOGIES IN PHYSICS-INFORMED NEURAL NET-WORKS. 2020.url:https://arxiv.org/pdf/2001.04536.pdf.
+[2] Sifan Wang, Yujun Teng, Paris Perdikaris.UNDERSTANDING AND MITIGATING GRADIENT PATHOLOGIES IN PHYSICS-INFORMED NEURAL NETWORKS. 2020.url:https://arxiv.org/pdf/2001.04536.pdf.
 
 [3] Lu Lu et al.DeepXDE: A deep learning library for solving differential equations.2019.url:https://arxiv.org/abs/1907.04502
 
