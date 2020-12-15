@@ -2,7 +2,7 @@
 
 PINNs were proposed by Raissi et al. in [1] to solve PDEs by incorporating the physics (i.e the PDE) and the boundary conditions in the loss function. The loss is the Mean-Squared Error of the PDE and boundary residual measured on 'collocation points' distributed across the domain. 
 
-![Screenshot](PINN_schematic.jpg)
+![Screenshot](https://github.com/omniscientoctopus/Physics-Informed-Neural-Networks/blob/main/PINN_schematic.png)
 
 This repository contains implementation of PINNs in TensorFlow 2 (w and w/o Keras) for the Burgers' and Poissons' PDE. 
 
