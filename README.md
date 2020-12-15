@@ -16,7 +16,7 @@ This repository currently contains implementation of PINNs in TensorFlow 2 (w an
 pip install numpy==1.19.2 scipy==1.5.3 tensorflow==2.0.0 matplotlib==3.3.2 pydoe==0.3.8 seaborn==0.9.0
 ```
 
-Newer versions of seaborn do not support sns.distplot and can problematic when ploting gradients histograms
+Newer versions of seaborn do not support sns.distplot and can problematic when ploting gradient histograms
 
 # Work Summary
 
@@ -31,6 +31,8 @@ It was reported in [3] that PINNs tend to learn all spectral frequencies of the 
 3. Transfer Learning in PINNs
 
 The effect of transfer learning in PINNs was studied to understand its effects on solution error. The general observation was that transfer learning helps us find better local minima when compared to a random Xavier initialization. 
+
+# Bibliography
 
 [1] Maziar Raissi, Paris Perdikaris, and George Em Karniadakis.Physics InformedDeep Learning (Part I): Data-driven Solutions of Nonlinear Partial     DifferentialEquations.url:http://arxiv.org/pdf/1711.10561v1
 
