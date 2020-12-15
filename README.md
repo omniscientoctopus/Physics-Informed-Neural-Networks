@@ -10,6 +10,14 @@ PINNs are summarised in the following schematic:
 
 This repository currently contains implementation of PINNs in TensorFlow 2 (w and w/o Keras) for the Burgers' and Poissons' PDE. 
 
+# Installation
+
+```javascript
+pip install numpy==1.19.2 scipy==1.5.3 tensorflow==2.0.0 matplotlib==3.3.2 pydoe==0.3.8 seaborn==0.9.0
+```
+
+Newer versions of seaborn do not support sns.distplot and can problematic when ploting gradients histograms
+
 # Work Summary
 
 1. Solving stiff PDEs with the L-BFGS optimizer
