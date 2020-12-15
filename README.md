@@ -4,7 +4,9 @@ PINNs were proposed by Raissi et al. in [1] to solve PDEs by incorporating the p
 
 PINNs are summarised in the following schematic:
 
+<p align="center">
 <img src="https://github.com/omniscientoctopus/Physics-Informed-Neural-Networks/blob/main/PINN_schematic.png" width="600">
+</p>
 
 This repository contains implementation of PINNs in TensorFlow 2 (w and w/o Keras) for the Burgers' and Poissons' PDE. 
 
