@@ -42,4 +42,4 @@ The effect of transfer learning in PINNs was studied to understand its effects o
 
 [4] Maithra Raghu et al. SVCCA: Singular Vector Canonical Correlation Analysis for Deep Learning Dynamics and Interpretability. http://arxiv.org/pdf/1706.05806v2
 
-[5] Levi McClenny and Ulisses Braga-Neto. Self-Adaptive Physics-Informed NeuralNetworks using a Soft Attention Mechanism. 2020. https://arxiv.org/abs/2009.04544
+[5] Levi McClenny and Ulisses Braga-Neto. Self-Adaptive Physics-Informed Neural Networks using a Soft Attention Mechanism. 2020. https://arxiv.org/abs/2009.04544
