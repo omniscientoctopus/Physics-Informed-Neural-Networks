@@ -34,12 +34,12 @@ The effect of transfer learning in PINNs was studied to understand its effects o
 
 # Bibliography
 
-[1] Maziar Raissi, Paris Perdikaris, and George Em Karniadakis.Physics InformedDeep Learning (Part I): Data-driven Solutions of Nonlinear Partial     DifferentialEquations.url:http://arxiv.org/pdf/1711.10561v1
+[1] Maziar Raissi, Paris Perdikaris, and George Em Karniadakis.Physics Informed Deep Learning (Part I): Data-driven Solutions of Nonlinear Partial Differential Equations. http://arxiv.org/pdf/1711.10561v1
 
-[2] Sifan Wang, Yujun Teng, Paris Perdikaris.UNDERSTANDING AND MITIGATING GRADIENT PATHOLOGIES IN PHYSICS-INFORMED NEURAL NETWORKS. 2020.url:https://arxiv.org/pdf/2001.04536.pdf.
+[2] Sifan Wang, Yujun Teng, Paris Perdikaris.UNDERSTANDING AND MITIGATING GRADIENT PATHOLOGIES IN PHYSICS-INFORMED NEURAL NETWORKS. 2020. https://arxiv.org/pdf/2001.04536.pdf.
 
-[3] Lu Lu et al.DeepXDE: A deep learning library for solving differential equations.2019.url:https://arxiv.org/abs/1907.04502
+[3] Lu Lu et al.DeepXDE: A deep learning library for solving differential equations.2019. https://arxiv.org/abs/1907.04502
 
-[4] Maithra Raghu et al.SVCCA: Singular Vector Canonical Correlation Analysis forDeep Learning Dynamics and Interpretability.url:http://arxiv.org/pdf/1706.05806v2
+[4] Maithra Raghu et al.SVCCA: Singular Vector Canonical Correlation Analysis forDeep Learning Dynamics and Interpretability. http://arxiv.org/pdf/1706.05806v2
 
-[5] Levi McClenny and Ulisses Braga-Neto.Self-Adaptive Physics-Informed NeuralNetworks using a Soft Attention Mechanism. 2020.url:https://arxiv.org/abs/2009.04544
+[5] Levi McClenny and Ulisses Braga-Neto.Self-Adaptive Physics-Informed NeuralNetworks using a Soft Attention Mechanism. 2020. https://arxiv.org/abs/2009.04544
