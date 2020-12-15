@@ -40,6 +40,6 @@ The effect of transfer learning in PINNs was studied to understand its effects o
 
 [3] Lu Lu et al. DeepXDE: A deep learning library for solving differential equations.2019. https://arxiv.org/abs/1907.04502
 
-[4] Maithra Raghu et al. SVCCA:Singular Vector Canonical Correlation Analysis forDeep Learning Dynamics and Interpretability. http://arxiv.org/pdf/1706.05806v2
+[4] Maithra Raghu et al. SVCCA: Singular Vector Canonical Correlation Analysis for Deep Learning Dynamics and Interpretability. http://arxiv.org/pdf/1706.05806v2
 
 [5] Levi McClenny and Ulisses Braga-Neto. Self-Adaptive Physics-Informed NeuralNetworks using a Soft Attention Mechanism. 2020. https://arxiv.org/abs/2009.04544
