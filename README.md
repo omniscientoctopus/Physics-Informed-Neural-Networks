@@ -16,7 +16,7 @@ It was reported in [3] that PINNs tend to learn all spectral frequencies of the 
 
 3. Transfer Learning in PINNs
 
-The effect of transfer learning in PINNs was studied to understand its effects on solution error. The general observation was that transfer learning helps us find better local minima. 
+The effect of transfer learning in PINNs was studied to understand its effects on solution error. The general observation was that transfer learning helps us find better local minima when compared to a random Xavier initialization. 
 
 [1] Maziar Raissi, Paris Perdikaris, and George Em Karniadakis.Physics InformedDeep Learning (Part I): Data-driven Solutions of Nonlinear Partial     DifferentialEquations.url:http://arxiv.org/pdf/1711.10561v1
 
