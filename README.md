@@ -12,7 +12,7 @@ PINNs are studied with the L-BFGS optimizer and compared with the Adam optimizer
 
 2. Bottom Up learning in PINNs
 
-It was reported in [3] that PINNs tend to learn all spectral frequencies of the solution simalteneously due to the presence of derivatives in the loss function. In order to understand if there are any other changes in the learning mechanics of PINNs, bottom-up learning was reinvestigated. A heuristic proof of bottom up learning was given in [4], the same methodology is followed here while training the PINN to solve the Burgers' PDE.  No changes in this mechanism was observed and it was confirmed that PINNs also learn bottom-up. A video of this observation can be found here (https://youtu.be/LmaSPoBVOrA). 
+It was reported in [3] that PINNs tend to learn all spectral frequencies of the solution simalteneously due to the presence of derivatives in the loss function. In order to understand if there are any other changes in the learning mechanics of PINNs, bottom-up learning was reinvestigated. Bottom-up learing implies that the lower layers, i.e layers close to the input, converge faster than the upper layers, i.e layers closer to the output. A heuristic proof of bottom-up learning was given in [4], the same methodology is followed here while training the PINN to solve the Burgers' PDE.  No changes in this mechanism was observed and it was confirmed that PINNs also learn bottom-up. A video of this observation can be found here (https://youtu.be/LmaSPoBVOrA). 
 
 3. Transfer Learning in PINNs
 
