@@ -10,7 +10,7 @@ PINNs are summarised in the following schematic:
 
 This repository currently contains implementation of PINNs in TensorFlow 2 (w and w/o Keras) for the Burgers' and Poissons' PDE.
 
-Currently working on the PyTorch implementation and will soon incorporate the SIREN actiavation (paper from NeurIPS 2020).
+Currently working on the PyTorch implementation and will soon incorporate the SIREN actiavation (paper from NeurIPS 2020)
  
 
 # Installation
