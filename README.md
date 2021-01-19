@@ -8,7 +8,7 @@ PINNs are summarised in the following schematic:
 <img src="https://github.com/omniscientoctopus/Physics-Informed-Neural-Networks/blob/main/Images/PINN_schematic.png" width="600">
 </p>
 
-This repository currently contains implementation of PINNs in TensorFlow 2 and PyTorch for the Burgers' and Poissons' PDE.
+This repository currently contains implementation of PINNs in TensorFlow 2 and PyTorch for the Burgers' and Helmholtz PDE.
 
 Currently working on the PyTorch implementation and will soon incorporate the SIREN actiavation (paper from NeurIPS 2020).
 
