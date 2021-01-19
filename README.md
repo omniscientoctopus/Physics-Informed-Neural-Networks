@@ -25,7 +25,7 @@ pip install numpy==1.19.2 scipy==1.5.3 tensorflow==2.0.0 matplotlib==3.3.2 pydoe
 ```javascript
 pip install numpy==1.19.2 scipy==1.5.3 matplotlib==3.3.2 pydoe==0.3.8 torch==1.7.1+cu92 torchvision==0.8.2+cu92 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-For GPU installations, check for compatible PyTorch version on the [official website](https://pytorch.org/get-started/locally/).   
+For GPU installations, check for compatible PyTorch versions on the [official website](https://pytorch.org/get-started/locally/).   
 
 Newer versions of seaborn do not support sns.distplot and can problematic when ploting gradient histograms
 
