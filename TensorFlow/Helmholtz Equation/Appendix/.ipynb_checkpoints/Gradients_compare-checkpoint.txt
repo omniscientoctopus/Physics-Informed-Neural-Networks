@@ -1,0 +1,64 @@
+#generate the gradients
+with tf.GradientTape(persistent=True) as tape:
+    loss_value, loss_u, loss_f = PINN.loss(X_u_train, u_train, X_f_train)
+    grad_u = tape.gradient(loss_u, PINN.trainable_variables) 
+    grad_f = tape.gradient(loss_f, PINN.trainable_variables)
+    del tape
+
+#Writing gradients to 2 separate JSON files 
+
+L = len(layers)-1 #number of weights matrices
+
+for i in range (L*2):
+
+    temp = grad_f[i].numpy().tolist() # nested lists with same data, indices
+    json.dump(temp, codecs.open("Stiff_problem/Gradients/gradients_f" + str(i) + ".json", 'w', encoding='utf-8'), separators=(',', ':'), sort_keys=True, indent=0)
+    
+    temp = grad_u[i].numpy().tolist() # nested lists with same data, indices
+    json.dump(temp, codecs.open("Stiff_problem/Gradients/gradients_u" + str(i) + ".json", 'w', encoding='utf-8'), separators=(',', ':'), sort_keys=True, indent=0)
+
+f_1 = {} #residual non-stiff problem
+u_1 = {} #boundary non-stiff problem
+
+f_2 = {} #residual stiff problem
+u_2 = {} #boundary stiff problem
+
+L = 4 
+
+
+#Reading gradients from JSON files and storing in a dict 
+for i in range (L*2):
+
+    obj_text = codecs.open("Non_Stiff_problem/Gradients/gradients_f" + str(i) + ".json", 'r', encoding='utf-8').read()
+    f_1['f'+ str(i)] = np.array(json.loads(obj_text))
+    
+    obj_text = codecs.open("Non_Stiff_problem/Gradients/gradients_u" + str(i) + ".json", 'r', encoding='utf-8').read()
+    u_1['u'+ str(i)] = np.array(json.loads(obj_text))
+    
+    obj_text = codecs.open("Stiff_problem/Gradients/gradients_f" + str(i) + ".json", 'r', encoding='utf-8').read()
+    f_2['f'+ str(i)] = np.array(json.loads(obj_text))
+    
+    obj_text = codecs.open("Stiff_problem/Gradients/gradients_u" + str(i) + ".json", 'r', encoding='utf-8').read()
+    u_2['u'+ str(i)] = np.array(json.loads(obj_text))
+
+
+#Plot the gradients
+
+sns.set_theme()
+
+for i in range (L*2):
+    
+    dataset = pd.DataFrame({'PDE residual (non-stiff)': f_1['f'+ str(i)].flatten(), 
+                            'Boundary residual (non-stiff)': u_1['u'+ str(i)].flatten(),
+                            'PDE residual (stiff)': f_2['f'+ str(i)].flatten(), 
+                            'Boundary residual (stiff)': u_2['u'+ str(i)].flatten()})
+    
+    """ 
+    A histogram aims to approximate the underlying probability density function that generated the data by binning and counting observations. 
+    Rather than using discrete bins, a Kernel density estimation (KDE) plot smooths the observations with a Gaussian kernel, 
+    producing a continuous density estimate
+    """
+    
+    plt = sns.displot(dataset, kind='kde', log_scale = True)
+    
+    plt.savefig("Stiff_problem/Gradients/output" + str(i) + ".png", dpi=500)
